@@ -13,7 +13,7 @@
 			
 		</head>
 		
-		<body bgcolor='#FF0AF5'>
+		<body bgcolor='#FFAF05'>
 		
 			<a href="https://65647m.github.io/hello.html">:)</a>
 			<br>
@@ -29,6 +29,15 @@
 						ctx.beginPath();
 						ctx.rect(150, 150, 200, 200);
 						ctx.fillStyle = "#00AF00";
+						ctx.fill();
+						ctx.closePath();
+						ctx.beginPath();
+						ctx.strokeStyle = "#AFAF00";
+						ctx.moveTo(150, 150);
+						ctx.lineTo(200,80);
+						ctx.lineTo(100,80);
+						ctx.lineTo(150,150);
+						ctx.fillStyle = "#AFAF00";
 						ctx.fill();
 						ctx.closePath();
 					</script>
