@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+	<html>
+	
+		<head>
+		
+			<title>
+			
+				JS First.
+			
+			</title>
+			
+			<link rel="icon" type="image/png" href="favicon.png">
+		
+		</head>
+		
+		<body>
+		
+			<div align="middle">
+			
+				<img src="favicon.png">
+				
+				<br>
+				
+				<br>
+				
+				<button id="btn1" onClick="changeColor();">Старт!</button>
+			
+			</div>
+			
+			<script>
+			
+				var colorArray = ["red","orange","yellow","green","blue","magenta"];
+				var i = 0;
+				console.log("Начало...");
+				
+				function changeColor () {
+				
+					document.body.style.background = colorArray[i];
+					console.log("Цвет изменён на: " + document.body.style.background);
+					i++;
+					if( i > colorArray.length - 1 ) {
+					
+						i = 0;
+					
+					}
+				
+				}
+			
+			</script>
+		
+			<style>
+			
+				* {
+					font-family: 'Roboto Condensed', sans-serif;
+				}
+				
+				#btn1 {
+					display: block;
+					border: none;
+					background: #12c2e9;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					border-radius: 10px;
+					padding: 20px;
+					color: white;
+					outline: none;
+					width: 97%;
+					font-size: 26px;
+				}
+			
+			</style>
+		
+		</body>
+	
+	</html>
