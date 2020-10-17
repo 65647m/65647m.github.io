@@ -1,4 +1,4 @@
-
+  
 				function changeColorRainbow () {
 				
 					setTimeout(()=>{
@@ -104,3 +104,32 @@
 			
 			
 			<button id="btn3" onClick="changeColorRainbow();">Rainbow!</button>
+
+
+
+
+
+
+
+function picMouseEnter0 () {
+				
+					var el0 = document.getElementById("hFive0");
+					
+					el0.innerHTML("Cookie");
+				
+				}
+				
+				function picMouseLeave0 () {
+				
+					
+					var el0 = document.getElementById("hFive0");
+					
+					el0.innerHTML("");
+				
+				
+				}
+
+
+
+
+onmouseenter="picMouseEnter0();" onmouseleave="picMouseLeave0();"
