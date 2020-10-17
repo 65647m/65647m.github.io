@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+	<html>
+	
+		<head>
+		
+			<title>
+			
+				JS First.
+			
+			</title>
+			
+			<link rel="icon" type="image/png" href="favicon.png">
+		
+		</head>
+		
+		<body>
+		
+			<div align="middle">
+			
+				<img src="favicon.png">
+				
+				<br>
+				
+				<br>
+				
+				<button id="btn1" onClick="changeColor();">Старт!</button>
+				
+				<br>
+				
+				<button id="btn2" onClick="changeColorBack();">Back!</button>
+				
+				<br>
+				
+				<button id="btn3" onClick="goToFirst();">First Ver!</button>
+			
+			</div>
+			
+			<script>
+			
+				var colorArray = ["red","orange","yellow","green","blue","magenta","aqua","#05ffb8","#e8b58e"];
+				var i = 0;
+				console.log("Начало...");
+				
+				function changeColor () {
+				
+					document.body.style.background = colorArray[i];
+					console.log("Цвет изменён на: " + document.body.style.background);
+					i++;
+					if( i > colorArray.length - 1 ) {
+					
+						i = 0;
+					
+					}
+				
+				}
+				
+				function changeColorBack () {
+				
+					document.body.style.background = colorArray[i];
+					console.log(" (Back) Цвет изменён на: " + document.body.style.background);
+					i--;
+					if( i > colorArray.length - 1 ) {
+					
+						i = 9;
+					
+					}
+				
+				}
+				
+				function goToFirst () {
+				
+					
+					window.location.assign("https://65647m.github.io/stm/Tasks/1/1/index.html");
+				
+				}
+			
+			</script>
+		
+			<style>
+			
+				* {
+					font-family: 'Roboto Condensed', sans-serif;
+				}
+				
+				#btn1 {
+					display: block;
+					border: none;
+					background: #12c2e9;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					border-radius: 10px;
+					padding: 20px;
+					color: white;
+					outline: none;
+					width: 97%;
+					font-size: 26px;
+				}
+				
+				#btn2 {
+					display: block;
+					border: none;
+					background: #12c2e9;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					border-radius: 10px;
+					padding: 20px;
+					color: white;
+					outline: none;
+					width: 97%;
+					font-size: 26px;
+				}
+			
+			</style>
+		
+		</body>
+	
+	</html>
