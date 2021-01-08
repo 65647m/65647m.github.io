@@ -168,9 +168,9 @@
 					document.body.style.background = colorArray[i];
 					console.log(" (Back) Цвет изменён на: " + document.body.style.background);
 					i--;
-					if( i > colorArray.length - 1 ) {
+					if( i < 0 ) {
 					
-						i = 9;
+						i = colorArray.length - 1;
 					
 					}
 				
